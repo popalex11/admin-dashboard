@@ -1,19 +1,18 @@
 html, body{
     margin: 0;
+    height: 100%;
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 .sidebar{
     grid-row: 1/3;
     grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(53, 56, 56);
+    background-color: gray;
 }
 
 .header {
@@ -27,7 +26,6 @@ body {
 .content {
     grid-row: 2/3;
     grid-column: 2/3;
-    
     background-color: rgb(195, 219, 217)
 }
 
@@ -119,6 +117,7 @@ img{
     padding-left: 0px;
     font-size: 22px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .searchBtn{
@@ -138,11 +137,12 @@ img{
 }
 
 .profile-pic2{
-    width: 5rem;
+    width: 4rem;
     grid-row: 1/3;
     grid-column: 1/2;
     align-self:center;
-    margin-left: 20px;
+    margin-left: 10px;
+    
 }
 
 .hello{
@@ -243,4 +243,160 @@ img{
     justify-self: center;
     font-size: 26px;
     color: rgb(117, 145, 142);
+}
+
+.options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.options button{
+    border-radius:40px;
+    background-color: gray;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.options>button:hover{
+    background-color: rgb(78, 76, 76);
+}
+
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.sidebar{
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr;
+    color: whitesmoke;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    gap: 40px;
+    padding-left: 20px;
+}
+
+.title p{
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main-tasks{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(1fr, 6);
+}
+
+.secondary-tasks{
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: repeat(1fr,3);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sidebar div div img{
+    width: 2.5rem;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.sidebar div div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title{
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+
+.title img{
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.projects div div img{
+    width: 2rem;
+}
+
+
+.p{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 15fr;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 1px black;
+    background-color: #b4c9a8;
+}
+
+.color-block{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background: linear-gradient(#323b30, #92b18b);
+    border-radius: 20px 0 0 20px;
+}
+
+.projectTitle{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.projectText{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 10px 0 0 10px;
+    font-size: 20px;
+    color: rgb(71, 70, 70);
+}
+
+.projectButtons{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: end;
+    padding: 0px 10px 5px 0;
+}
+
+.p .projectTitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.announcements, .trending{
+    box-shadow: 0 0 3px 1px rgb(90, 89, 89);
+}
+
+.options button{
+    box-shadow: 0 0 3px 2px black;
+}
+
+.projectButtons img{
+    cursor: pointer;
+    padding:0 5px 0 5px
+}
+.header{
+    background-color: whitesmoke;
+}
+
+.sidebar .title{
+    cursor: pointer;
 }
